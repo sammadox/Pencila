@@ -1,0 +1,249 @@
+:root{
+    --color-text: #414141;
+    --color-light-dark: #939393;
+    --color-light-aqua: #B1DBDA;
+    --font-bold: 'Avenir Next Demi';
+    --font-regular: 'Avenir Next';
+}
+
+@font-face {
+    font-family: 'Avenir Next Demi';
+    src: url('../fonts/AvenirNext-DemiBold.eot');
+    src: url('../fonts/AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext-DemiBold.woff2') format('woff2'),
+        url('../fonts/AvenirNext-DemiBold.woff') format('woff'),
+        url('../fonts/AvenirNext-DemiBold.ttf') format('truetype'),
+        url('../fonts/AvenirNext-DemiBold.svg#AvenirNext-DemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../fonts/AvenirNext-Medium.eot');
+    src: url('../fonts/AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext-Medium.woff2') format('woff2'),
+        url('../fonts/AvenirNext-Medium.woff') format('woff'),
+        url('../fonts/AvenirNext-Medium.ttf') format('truetype'),
+        url('../fonts/AvenirNext-Medium.svg#AvenirNext-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Avenir Next';
+}
+
+
+.c-container {
+    max-width: 90%;
+}
+
+.cm-navbar {
+    padding: 30px 0;
+/*    background: #ddd;*/
+}
+
+.brand-img {
+    width: 43.39px;
+    height: 43.45px;
+    margin-right: 0 !important;
+}
+
+.navbar-brand span{
+    font-size: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 18px;
+    font-family: 'Avenir Next Demi';
+    color: var(--color-text);
+    line-height: 40px;
+}
+
+.cmg-txt{
+    margin-bottom: 0;
+    font-size: 20px;
+    margin-left: 43px;
+    margin-top: 15px;
+    line-height: 22px;
+}
+
+.cm-nav-link{
+    padding: 0 !important;
+}
+
+.cm-nav-link img{
+    width: 25px;
+}
+
+.banner-section {
+    position: relative;
+    height: calc(100vh - 103px);
+}
+
+.banner-img {
+    width: 280px;
+    margin-bottom: 40px;
+}
+
+.main-heading{
+    font-family: var(--font-bold);
+    margin: 0;
+    font-size: 100px;
+    line-height: .85;
+}
+
+.sub-heading{
+    margin-bottom: 0;
+    color: var(--color-light-dark);
+    margin-top: 45px;
+    max-width: 90%;
+    font-size: 18px;
+}
+
+.banner-form {
+    margin-top: 45px;
+    max-width: 80%;
+}
+
+.banner-form .form-group{
+    position: relative;
+}
+
+.banner-form .cm-form-control{
+    height: 71px;
+    border-radius: 100px;
+    padding: 0.375rem 80px 0.375rem 30px;
+    font-size: 20px;
+}
+
+.banner-form .cm-form-control::-webkit-input-placeholder { /* Edge */
+  color:#C4C4C4;
+}
+
+.banner-form .cm-form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#C4C4C4;
+}
+
+.banner-form .cm-form-control::placeholder {
+  color:#C4C4C4;
+}
+
+.btn-form {
+    position: absolute;
+    padding: 0;
+    width: 60px;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.social-nav {
+    margin-top: 60px;
+    margin-left: -8px;
+}
+
+.social-link {
+    padding: 0;
+    width: 33px;
+    height: 33px;
+}
+
+.social-link img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.social-li + .social-li{
+    margin-left: 40px;
+}
+
+@media (min-width: 1400px){
+    .banner-img {
+        width: 430px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width:1600px){
+    .main-heading{
+        font-size: 130px;
+    }
+    .sub-heading{
+        font-size: 20px;
+        max-width: 80%;
+    }
+    .social-nav {
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 1920px){
+    .c-container{
+        max-width: 100%;
+        width: calc(100% - 250px);
+    }
+    .cm-navbar{
+        padding: 50px 0;
+    }
+    .navbar-brand span{
+        font-size: 50px;
+        line-height: 45px;
+    }
+    .cmg-txt{
+        font-size: 27px;
+    }
+    .cm-nav-link img {
+        width: 31px;
+    }
+    .banner-section{
+        height: calc(100vh - 149.5px);      
+    }
+    .main-heading{
+        font-size: 155px;
+        line-height: 125px;
+    }
+    .sub-heading{
+        max-width: 70%;
+        margin-top: 50px;
+    }
+    .banner-form {
+        margin-top: 46px;
+        max-width: 70%;
+    }
+    .social-nav {
+        margin-top: 95px;
+    }
+    .banner-img {
+        width: 430px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 2000px){
+    .main-heading {
+        font-size: 170px;
+        line-height: 140px;
+    }
+    .sub-heading {
+        font-size: 24px;
+        max-width: 80%;
+    }
+    .banner-form{
+        max-width: 80%;
+    }
+    .banner-form .cm-form-control{
+        font-size: 24px;
+    }
+    .banner-img {
+        width: 550px;
+        margin-bottom: 50px;
+    }
+    .social-link{
+        width: 40px;
+        height: 40px
+    }
+}
